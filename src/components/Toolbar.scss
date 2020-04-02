@@ -1,0 +1,14 @@
+/*
+ * Header
+ */
+
+ header {
+  button .feather {
+    margin-right: 0.3125em;
+  }
+  .dropdown-toggle {
+    &:after {
+      margin-left: 0.525em;
+    }
+  }
+}
