@@ -2,18 +2,11 @@ import React, { Component } from 'react';
 import './Header.scss';
 
 import { 
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
 } from 'reactstrap';
 
 export class Header extends Component {
