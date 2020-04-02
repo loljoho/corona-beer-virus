@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
-import LineChart from '../components/LineChart';
-import DataTable from '../components/DataTable';
+import { getStatesCurrent } from '../../utils/API';
+
+import LineChart from '../../components/LineChart';
+import DataTable from '../../components/DataTable';
 
 export class Home extends Component {
   constructor(props) {
@@ -15,6 +17,7 @@ export class Home extends Component {
   render() {
     return (
       <> 
+        <h1>Home</h1>
         <LineChart />
         <DataTable />
       </>

@@ -10,9 +10,10 @@ import {
 import Header from './components/Header';
 import Wrapper from './components/Wrapper';
 import Sidebar from './components/Sidebar';
-import Toolbar from './components/Toolbar';
+import Subheader from './components/Subheader';
 
 import Home from './pages/Home';
+import States from './pages/States';
 
 function App() {
   return (
@@ -20,12 +21,11 @@ function App() {
       <Router>
         <Header />
         <Wrapper>
-          <Toolbar />
           <Sidebar />
+          <Subheader title="Dashboard" />
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
+            <Route exact path="/" component={Home} />
+            <Route path="/states" component={States} />
           </Switch>
         </Wrapper>
       </Router>
