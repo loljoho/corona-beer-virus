@@ -14,7 +14,7 @@ export class Header extends Component {
     return (
       <Navbar className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
         <NavbarBrand className="col-sm-3 col-md-2 mr-0" href="/">
-          Corona Beer Virus 2019
+          Beer Virus 2019
         </NavbarBrand>
         <input className="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search" />
         <Nav className="navbar-nav px-3">

@@ -4,7 +4,7 @@ import './Sidebar.scss';
 import { 
   Nav,
   NavItem,
-  NavLink 
+  NavLink,
 } from 'reactstrap';
 
 import { 
@@ -12,7 +12,7 @@ import {
   Map,
   MapPin,
   FileText,
-  PlusCircle
+  PlusCircle,
 } from 'react-feather';
 
 export class Sidebar extends Component {
@@ -22,13 +22,13 @@ export class Sidebar extends Component {
         <div className="sidebar-sticky">
           <Nav className="flex-column mb-2">
             <NavItem>
-              <NavLink className="active" href="#">
+              <NavLink className="active" href="/">
                 <Home className="feather" size={16} />
                 Home <span className="sr-only">(current)</span>
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">
+              <NavLink href="/states">
                 <MapPin className="feather" size={16} />
                 States
               </NavLink>

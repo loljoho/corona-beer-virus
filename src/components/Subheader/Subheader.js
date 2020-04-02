@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Toolbar.scss';
+import './Subheader.scss';
 
 import { 
   ButtonToolbar,
@@ -15,16 +15,26 @@ import {
   Calendar
 } from 'react-feather';
 
-export class Toolbar extends Component {
+export class Subheader extends Component {
+
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       
+    }
+  }
+  
   
   // const [dropdownOpen, setOpen] = useState(false);
 
   // const toggle = () => setOpen(!dropdownOpen);
 
   render() {
+    const { title } = this.props;
     return (
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 className="h2">Dashboard</h1>
+        <h1 className="h2">{title}</h1>
         <ButtonToolbar className="mb-2 mb-md-0">
           <ButtonGroup className="mr-2">
             <Button size="sm" outline color="secondary">Share</Button>
@@ -49,4 +59,4 @@ export class Toolbar extends Component {
   }
 }
 
-export default Toolbar;
+export default Subheader;
