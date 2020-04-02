@@ -1,23 +1,34 @@
 import React from 'react';
 import './App.scss';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
 import Header from './components/Header';
 import Wrapper from './components/Wrapper';
 import Sidebar from './components/Sidebar';
 import Toolbar from './components/Toolbar';
-import LineChart from './components/LineChart';
-import DataTable from './components/DataTable';
+
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Wrapper>
-        <Toolbar />
-        <Sidebar />
-        <LineChart />
-        <DataTable />
-      </Wrapper>
+      <Router>
+        <Header />
+        <Wrapper>
+          <Toolbar />
+          <Sidebar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Wrapper>
+      </Router>
     </div>
   );
 }
