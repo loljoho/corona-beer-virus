@@ -7,7 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-} from 'reactstrap';
+} from 'react-bootstrap';
 
 export class Header extends Component {
   render() {

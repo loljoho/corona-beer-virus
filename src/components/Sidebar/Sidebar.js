@@ -5,7 +5,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-} from 'reactstrap';
+} from 'react-bootstrap';
 
 import { 
   Home,

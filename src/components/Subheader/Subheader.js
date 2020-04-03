@@ -5,11 +5,8 @@ import {
   ButtonToolbar,
   ButtonGroup,
   Button,
-  UncontrolledButtonDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from 'reactstrap';
+  Dropdown,
+} from 'react-bootstrap';
 
 import { 
   Calendar
@@ -40,19 +37,20 @@ export class Subheader extends Component {
             <Button size="sm" outline color="secondary">Share</Button>
             <Button size="sm" outline color="secondary">Export</Button>
           </ButtonGroup>
-          <UncontrolledButtonDropdown>
-            <DropdownToggle caret size="sm" outline color="secondary">
+
+          <Dropdown>
+            <Dropdown.Toggle caret size="sm" variant="outline-secondary">
               <Calendar className="feather" size={16} />
               This week
-            </DropdownToggle>
-            <DropdownMenu>
-              <DropdownItem header>Header</DropdownItem>
-              <DropdownItem disabled>Action</DropdownItem>
-              <DropdownItem>Another Action</DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem>Another Action</DropdownItem>
-            </DropdownMenu>
-          </UncontrolledButtonDropdown>
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item header>Header</Dropdown.Item>
+              <Dropdown.Item disabled>Action</Dropdown.Item>
+              <Dropdown.Item>Another Action</Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item>Another Action</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </ButtonToolbar>
       </div>
     )

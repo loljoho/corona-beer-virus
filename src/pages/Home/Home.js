@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
-import { 
+// import { 
+//   Spinner,
+//   Toast,
+//   ToastBody,
+//   ToastHeader,
+// } from 'reactstrap';
+
+import {
   Spinner,
   Toast,
   ToastBody,
   ToastHeader,
-} from 'reactstrap';
+} from 'react-bootstrap';
 
 import LineChart from '../../components/LineChart';
 import DataTable from '../../components/DataTable';
