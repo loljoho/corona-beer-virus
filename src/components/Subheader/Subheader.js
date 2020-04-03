@@ -30,25 +30,25 @@ export class Subheader extends Component {
   render() {
     const { title } = this.props;
     return (
-      <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <div className="Subheader d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 className="h2">{title}</h1>
         <ButtonToolbar className="mb-2 mb-md-0">
-          <ButtonGroup className="mr-2">
-            <Button size="sm" outline color="secondary">Share</Button>
-            <Button size="sm" outline color="secondary">Export</Button>
+          <ButtonGroup size="sm" className="mr-2">
+            <Button variant="outline-secondary">Share</Button>
+            <Button variant="outline-secondary">Export</Button>
           </ButtonGroup>
 
-          <Dropdown>
-            <Dropdown.Toggle caret size="sm" variant="outline-secondary">
+          <Dropdown flip="true">
+            <Dropdown.Toggle size="sm" variant="outline-secondary">
               <Calendar className="feather" size={16} />
-              This week
+              Current
             </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item header>Header</Dropdown.Item>
-              <Dropdown.Item disabled>Action</Dropdown.Item>
-              <Dropdown.Item>Another Action</Dropdown.Item>
+            <Dropdown.Menu flip="true">
+              <Dropdown.Item>Week</Dropdown.Item>
+              <Dropdown.Item>Month</Dropdown.Item>
+              <Dropdown.Item>Year</Dropdown.Item>
               <Dropdown.Divider />
-              <Dropdown.Item>Another Action</Dropdown.Item>
+              <Dropdown.Item>Custom</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </ButtonToolbar>
