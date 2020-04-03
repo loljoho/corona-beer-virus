@@ -8,7 +8,11 @@ import {
   // FormControl,
 } from 'react-bootstrap';
 
-export class Header extends Component {
+import {
+  GitHub,
+} from 'react-feather';
+
+class Header extends Component {
   render() {
     return (
       <Navbar bg="dark" variant="dark" fixed="top" className="flex-md-nowrap p-0 shadow">
@@ -21,7 +25,9 @@ export class Header extends Component {
           <FormControl type="text" placeholder="Search" className="w-100" aria-label="Search" />
         </Form> */}
         <Nav className="navbar-nav px-3">
-          <Nav.Link className="text-nowrap" href="#">Sign out</Nav.Link>
+          <Nav.Link className="text-nowrap" href="#">
+            <GitHub className="feather" size={24} />
+          </Nav.Link>
         </Nav>
       </Navbar>
     )
