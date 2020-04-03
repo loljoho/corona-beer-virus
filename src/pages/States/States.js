@@ -10,7 +10,7 @@ import {
 import LineChart from '../../components/LineChart';
 import DataTable from '../../components/DataTable';
 
-export class States extends Component {
+class States extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -69,7 +69,9 @@ export class States extends Component {
         <Spinner type="grow" color="primary" />
       );
     }
-    console.log(data);
+    if (!error && !isLoading) {
+      console.log(data);
+    }
     return (
       <> 
         <LineChart />

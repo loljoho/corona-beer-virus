@@ -5,15 +5,12 @@ import {
   Table,
 } from 'reactstrap';
 
-// import { 
-// } from 'react-feather';
-
-export class DataTable extends Component {
+class DataTable extends Component {
   render() {
     return (
       <>
         <h2>Section title</h2>
-        <Table striped responsive size="sm">
+        <Table hover striped responsive size="sm">
           <thead>
             <tr>
               <th>#</th>
