@@ -12,7 +12,7 @@ import Wrapper from './components/Wrapper';
 import Sidebar from './components/Sidebar';
 import Subheader from './components/Subheader';
 
-import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
 import States from './pages/States';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
           <Sidebar />
           <Subheader title="Dashboard" />
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Dashboard} />
             <Route path="/states" component={States} />
           </Switch>
         </Wrapper>

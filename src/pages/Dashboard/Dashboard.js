@@ -17,7 +17,7 @@ import {
 import LineChart from '../../components/LineChart';
 import DataTable from '../../components/DataTable';
 
-class Home extends Component {
+class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,9 +42,10 @@ class Home extends Component {
         }
       })
       .then(data => {
+        console.log(data[0]);
         this.setState({
           isLoading: false,
-          data: data
+          data: data[0]
         });
       })
       .catch(error => {
@@ -76,7 +77,6 @@ class Home extends Component {
         <Spinner type="grow" color="primary" />
       );
     }
-    console.log(data);
     return (
       <> 
         <LineChart />
@@ -86,4 +86,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Dashboard;

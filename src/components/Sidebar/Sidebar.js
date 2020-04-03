@@ -3,8 +3,6 @@ import './Sidebar.scss';
 
 import { 
   Nav,
-  NavItem,
-  NavLink,
 } from 'react-bootstrap';
 
 import { 
@@ -15,30 +13,30 @@ import {
   PlusCircle,
 } from 'react-feather';
 
-export class Sidebar extends Component {
+class Sidebar extends Component {
   render() {
     return (
       <nav className="col-md-2 d-none d-md-block bg-light sidebar">
         <div className="sidebar-sticky">
           <Nav className="flex-column mb-2">
-            <NavItem>
-              <NavLink className="active" href="/">
+            <Nav.Item>
+              <Nav.Link className="active" href="/">
                 <Home className="feather" size={16} />
-                Home <span className="sr-only">(current)</span>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/states">
+                Dashboard
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/states">
                 <MapPin className="feather" size={16} />
                 States
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#">
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/country">
                 <Map className="feather" size={16} />
                 Country
-              </NavLink>
-            </NavItem>
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
 
           <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
@@ -49,30 +47,30 @@ export class Sidebar extends Component {
             </a>
           </h6>
           <Nav className="flex-column mb-2">
-            <NavItem>
-              <NavLink className="nav-link" href="#">
+            <Nav.Item>
+              <Nav.Link href="#">
                 <FileText className="feather" size={16} />
                 Current month
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="nav-link" href="#">
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="#">
                 <FileText className="feather" size={16} />
                 Last quarter
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="nav-link" href="#">
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="#">
                 <FileText className="feather" size={16} />
                 Social engagement
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="nav-link" href="#">
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="#">
                 <FileText className="feather" size={16} />
                 Year-end sale
-              </NavLink>
-            </NavItem>
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
           
         </div>
