@@ -27,10 +27,9 @@ const Placard = (props) => {
 
               <Col>
                 <FontAwesomeIcon 
-                  className="float-right"
+                  className="float-right text-gray-400"
                   icon={icon}
                   size="4x" 
-                  color="#999999"
                   fixedWidth
                 />
               </Col>
