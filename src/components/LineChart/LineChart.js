@@ -3,14 +3,14 @@ import './LineChart.scss';
 
 import { Line } from 'react-chartjs-2';
 
-export class LineChart extends Component {
+class LineChart extends Component {
   constructor(props) {
     super(props);
     this.chartReference = React.createRef();
   }
 
   componentDidMount() {
-    console.log(this.chartReference); // returns a Chart.js instance reference
+    // console.log(this.chartReference); // returns a Chart.js instance reference
   }
 
   render() {
