@@ -27,7 +27,6 @@ import {
 import Header from './components/Header';
 import Wrapper from './components/Wrapper';
 import Sidebar from './components/Sidebar';
-import Subheader from './components/Subheader';
 
 import Dashboard from './pages/Dashboard';
 import States from './pages/States';
@@ -55,7 +54,6 @@ function App() {
         <Header />
         <Wrapper>
           <Sidebar />
-          <Subheader title="Overview · COVID-19" />
           <Switch>
             <Route exact path="/" component={Dashboard} />
             <Route path="/states" component={States} />

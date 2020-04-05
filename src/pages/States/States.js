@@ -9,6 +9,7 @@ import {
 
 import LineChart from '../../components/LineChart';
 import DataTable from '../../components/DataTable';
+import Subheader from '../../components/Subheader';
 
 class States extends Component {
   constructor(props) {
@@ -74,6 +75,7 @@ class States extends Component {
     }
     return (
       <> 
+        <Subheader heading="Current" subheading="States" />
         <LineChart />
         <DataTable />
       </>

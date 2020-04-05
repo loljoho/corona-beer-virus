@@ -28,10 +28,13 @@ export class Subheader extends Component {
   // const toggle = () => setOpen(!dropdownOpen);
 
   render() {
-    const { title } = this.props;
+    const { heading, subheading } = this.props;
     return (
       <div className="Subheader d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 className="h2">{title}</h1>
+        <h1 className="h2">
+          {heading}
+          <small className="text-muted px-2">{subheading}</small>
+        </h1>
         <ButtonToolbar className="mb-2 mb-md-0">
           <ButtonGroup size="sm" className="mr-2">
             <Button variant="outline-secondary">Share</Button>

@@ -10,6 +10,7 @@ import {
 
 import Placard from '../../components/Placard';
 import DataTable from '../../components/DataTable';
+import Subheader from '../../components/Subheader';
 
 class Dashboard extends Component {
   constructor(props) {
@@ -74,6 +75,7 @@ class Dashboard extends Component {
     console.log(data);
     return (
       <> 
+        <Subheader heading="Current" subheading="United States" />
         <Row className="d-sm-flex align-items-stretch justify-content-between mb-4">
           <Placard label="Too Much Marijuanas" value="1,234.5" icon="bong" />
           <Placard label="Ninja Ambush" value="22" icon="user-ninja" />
