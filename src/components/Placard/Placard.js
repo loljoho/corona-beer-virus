@@ -13,7 +13,7 @@ const Placard = (props) => {
   return (
     <>
       <div className="placard col-xl-3 col-lg-4 col-sm-6 col-xs-12 mb-4">
-        <Card className="border-left-primary shadow h-100 py-2">
+        <Card className="border-left-primary whiteframe-z1 h-100 py-2">
           <Card.Body>
             <Row noGutters align-items-center="true">
               <Col className="mr-2">
