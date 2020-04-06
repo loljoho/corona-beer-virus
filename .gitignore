@@ -8,6 +8,13 @@
 *~*
 *.code-*
 
+# Archives
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.zip
+
 
 # -------------------------------
 #   Node.js
