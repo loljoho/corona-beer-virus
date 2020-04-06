@@ -1,0 +1,39 @@
+#!/bin/bash
+#
+# Open workspace in VSCode and launches Terminal windows 
+
+# Find the most recent VSCode workspace file
+for f in *.code-workspace; do
+  if [[ $f -nt $latest ]] && latest=$f; then
+    LAST_WORKSPACE=$f
+  fi
+done
+
+# Open the workspace file if it exists
+if [[ -f "$LAST_WORKSPACE" ]]; then
+  code $LAST_WORKSPACE
+# Open directory with VSCode
+else
+  code .
+fi
+
+# Show repository information in new window
+x-terminal-emulator -e "bash -c '
+  resize -s 50 100; 
+  clear; 
+  git remote -v
+  echo -e \"\"; 
+  git branch;
+  echo -e \"\"; 
+  git log -3; 
+  echo -e \"\"; 
+  git status; 
+  $SHELL
+'"
+
+# Spin up development server in new window
+x-terminal-emulator --hide-menubar -e "bash -c '
+  resize -s 60 100; 
+  npm start; 
+  $SHELL
+'"
