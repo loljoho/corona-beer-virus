@@ -3,7 +3,7 @@ import './DataTable.scss';
 
 import { 
   Table,
-} from 'reactstrap';
+} from 'react-bootstrap';
 
 class DataTable extends Component {
   render() {

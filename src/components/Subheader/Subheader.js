@@ -5,11 +5,8 @@ import {
   ButtonToolbar,
   ButtonGroup,
   Button,
-  UncontrolledButtonDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from 'reactstrap';
+  Dropdown,
+} from 'react-bootstrap';
 
 import { 
   Calendar
@@ -31,28 +28,32 @@ export class Subheader extends Component {
   // const toggle = () => setOpen(!dropdownOpen);
 
   render() {
-    const { title } = this.props;
+    const { heading, subheading } = this.props;
     return (
-      <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 className="h2">{title}</h1>
+      <div className="Subheader d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 className="h2">
+          {heading}
+          <small className="text-muted px-2">{subheading}</small>
+        </h1>
         <ButtonToolbar className="mb-2 mb-md-0">
-          <ButtonGroup className="mr-2">
-            <Button size="sm" outline color="secondary">Share</Button>
-            <Button size="sm" outline color="secondary">Export</Button>
+          <ButtonGroup size="sm" className="mr-2">
+            <Button variant="outline-secondary">Share</Button>
+            <Button variant="outline-secondary">Export</Button>
           </ButtonGroup>
-          <UncontrolledButtonDropdown>
-            <DropdownToggle caret size="sm" outline color="secondary">
+
+          <Dropdown flip="true">
+            <Dropdown.Toggle size="sm" variant="outline-secondary">
               <Calendar className="feather" size={16} />
-              This week
-            </DropdownToggle>
-            <DropdownMenu>
-              <DropdownItem header>Header</DropdownItem>
-              <DropdownItem disabled>Action</DropdownItem>
-              <DropdownItem>Another Action</DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem>Another Action</DropdownItem>
-            </DropdownMenu>
-          </UncontrolledButtonDropdown>
+              Current
+            </Dropdown.Toggle>
+            <Dropdown.Menu flip="true">
+              <Dropdown.Item>Week</Dropdown.Item>
+              <Dropdown.Item>Month</Dropdown.Item>
+              <Dropdown.Item>Year</Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item>Custom</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </ButtonToolbar>
       </div>
     )

@@ -1,0 +1,152 @@
+//	Overflow Hidden
+// ------------------------------
+
+.o-hidden {
+  overflow: hidden !important;
+}
+
+
+//	Border Colour Utilities
+// ------------------------------
+
+@each $color, $value in $theme-colors {
+  @each $position in ['left', 'bottom'] {
+    .border-#{$position}-#{$color} {
+      border-#{$position}: .25rem solid $value !important;
+    }
+  }
+}
+
+
+//	Whiteframe Shadow Utilities
+// ------------------------------
+
+@each $depth, $shadow in $shadows {
+  .whiteframe-#{$depth}dp {
+    box-shadow: $shadow !important;
+  }
+}
+
+.whiteframe-z1 {
+  box-shadow: $shadow-1dp;
+}
+
+.whiteframe-z2 {
+  box-shadow: $shadow-2dp;
+}
+
+.whiteframe-z3 {
+  box-shadow: $shadow-4dp;
+}
+
+.whiteframe-z4 {
+  box-shadow: $shadow-7dp;
+}
+
+.whiteframe-z5 {
+  box-shadow: $shadow-10dp;
+}
+
+.whiteframe-z6 {
+  box-shadow: $shadow-13dp;
+}
+
+.whiteframe-z7 {
+  box-shadow: $shadow-16dp;
+}
+
+.whiteframe-z8 {
+  box-shadow: $shadow-24dp;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .material {
+    border: 1px solid #fff;
+  }
+}
+
+@media print {
+  .material {
+    background-color: #ffffff;
+  }
+}
+
+
+//	Grayscale Background Utilities
+// ------------------------------
+
+@each $level, $value in $grays {
+  .bg-gray-#{$level} {
+    background-color: $value !important;
+  }
+}
+
+
+//	Grayscale Text Utilities
+// ------------------------------
+
+.text-xs {
+  font-size: .7rem;
+}
+
+.text-lg {
+  font-size: 1.2rem;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.text-gray-100,
+.text-grey-100 {
+  color: $gray-100 !important;
+}
+
+.text-gray-200,
+.text-grey-200 {
+  color: $gray-200 !important;
+}
+
+.text-gray-300,
+.text-grey-300 {
+  color: $gray-300 !important;
+}
+
+.text-gray-400,
+.text-grey-400 {
+  color: $gray-400 !important;
+}
+
+.text-gray-500,
+.text-grey-500 {
+  color: $gray-500 !important;
+}
+
+.text-gray-600,
+.text-grey-600 {
+  color: $gray-600 !important;
+}
+
+.text-gray-700,
+.text-grey-700 {
+  color: $gray-700 !important;
+}
+
+.text-gray-800,
+.text-grey-800 {
+  color: $gray-800 !important;
+}
+
+.text-gray-900,
+.text-grey-900 {
+  color: $gray-900 !important;
+}
+
+.icon-circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

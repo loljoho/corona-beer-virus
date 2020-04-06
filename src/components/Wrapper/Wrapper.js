@@ -4,7 +4,7 @@ import './Wrapper.scss';
 import { 
   Container, 
   Row
-} from 'reactstrap';
+} from 'react-bootstrap';
 
 function Wrapper(props) {
   return (
