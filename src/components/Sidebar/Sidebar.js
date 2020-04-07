@@ -6,6 +6,7 @@ import {
 } from 'react-bootstrap';
 
 import { ReactComponent as HomeIcon } from '../../lib/icons/tachometer-alt.svg';
+import { ReactComponent as NJIcon } from '../../lib/icons/nj.svg';
 import { ReactComponent as StateIcon } from '../../lib/icons/map-marker-alt.svg';
 import { ReactComponent as CountryIcon } from '../../lib/icons/flag-usa.svg';
 import { ReactComponent as AreaChartIcon } from '../../lib/icons/chart-area.svg';
@@ -24,6 +25,12 @@ class Sidebar extends Component {
               <Nav.Link className="active" href="/">
                 <HomeIcon className="icon" />
                 Dashboard
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/nj">
+                <NJIcon className="icon icon-nj" />
+                New Jersey
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
