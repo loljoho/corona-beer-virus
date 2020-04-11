@@ -8,8 +8,6 @@ import {
   ToastHeader,
 } from 'react-bootstrap';
 
-import * as cards from './cardIcons';
-
 import {
   Placard,
   PlacardIcon,
@@ -114,53 +112,23 @@ class Dashboard extends Component {
       <> 
         <Subheader heading="Current" subheading="United States" />
         <Row className="d-sm-flex align-items-stretch justify-content-between mb-4">
-          <Placard icon="iconBiohazard">
-            Placard label="Positive Tests" value="333747" 
-          </Placard>
-          <Placard icon="iconThumbsUp">
-            Placard label="Negative Tests" value="1444740" 
-          </Placard>
-          <Placard icon="iconClock.svg">
-            Placard label="Pending Tests" value="17368" 
-          </Placard>
-          <Placard icon="iconHospital.svg">
-            Placard label="Hospitalized, Currently" value="23069" 
-          </Placard>
-          <Placard icon="iconHospital-alt.svg">
-            Placard label="Hospitalized, Cumulative" value="41559" 
-          </Placard>
-          <Placard icon="iconProcedures.svg">
-            Placard label="In ICU, Currently" value="5497" 
-          </Placard>
-          <Placard icon="iconBed.svg">
-            Placard label="In ICU, Cumulative" value="922" 
-          </Placard>
-          <Placard icon="iconLungs-virus.svg">
-            Placard label="On Ventilator, Currently" value="612" 
-          </Placard>
-          <Placard icon="iconLungs.svg">
-            Placard label="On Ventilator, Cumulative" value="193" 
-          </Placard>
-          <Placard icon="iconClipboard-check.svg">
-            Placard label="Recovered" value="14569" 
-          </Placard>
-          <Placard icon="iconTombstone.svg">
-            Placard label="Deaths" value="9558" 
-          </Placard>
-          <Placard icon="iconHospital-user.svg">
-            Placard label="Hospitalized" value="41559" 
-          </Placard>
-          <Placard icon="iconSigma.svg">
-            Placard label="Total" value="1795855" 
-          </Placard>
-          <Placard icon="iconFiles-medical.svg">
-            Placard label="Total Tests" value="1778487" 
-          </Placard>
+          <Placard icon="iconBiohazard" label="Positive Tests" value="333747"></Placard>
+          <Placard icon="iconThumbsUp" label="Negative Tests" value="1444740"></Placard>
+          <Placard icon="iconClock" label="Pending Tests" value="17368"></Placard>
+          <Placard icon="iconHospital" label="Hospitalized, Currently" value="23069"></Placard>
+          <Placard icon="iconHospitalAlt" label="Hospitalized, Cumulative" value="41559"></Placard>
+          <Placard icon="iconProcedures" label="In ICU, Currently" value="5497"></Placard>
+          <Placard icon="iconBed" label="In ICU, Cumulative" value="922"></Placard>
+          <Placard icon="iconLungs-virus" label="On Ventilator, Currently" value="612"></Placard>
+          <Placard icon="iconLungs" label="On Ventilator, Cumulative" value="193"></Placard>
+          <Placard icon="iconClipboardCheck" label="Recovered" value="14569"></Placard>
+          <Placard icon="iconTombstone" label="Deaths" value="9558"></Placard>
+          <Placard icon="iconHospitalUser" label="Hospitalized" value="41559"></Placard>
+          <Placard icon="iconSigma" label="Total" value="1795855"></Placard>
+          <Placard icon="iconFilesMedical" label="Total Tests" value="1778487"></Placard>
         </Row>
         <DataTable />
-        {/* {data.map((card) => 
-          <Placard label={card.title} value={card.value} icon={card.icon} />
-        )} */}
+        {/* {data.map((card) => <Placard label={card.title} value={card.value} icon={card.icon} />)} */}
       </>
     );  
   }

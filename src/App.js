@@ -5,9 +5,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-} from "react-router-dom";
+  Redirect,
+} from 'react-router-dom';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { 
   faAmbulance,
   faBong,
@@ -55,8 +56,9 @@ function App() {
         <Wrapper>
           <Sidebar />
           <Switch>
-            <Route exact path="/" component={Dashboard} />
-            <Route path="/states" component={States} />
+            <Route exact path='/' component={Dashboard} />
+            <Route path='/states' component={States} />
+            <Redirect from='*' to='/' />
           </Switch>
         </Wrapper>
       </Router>
