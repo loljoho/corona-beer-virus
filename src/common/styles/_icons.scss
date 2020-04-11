@@ -1,0 +1,74 @@
+.icon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  &.icon-lg {
+    font-size: 1.33333em;
+    line-height: 0.75em;
+    vertical-align: -.0667em;
+  }
+  &.icon-xs {
+    font-size: .75em; 
+  }
+  &.icon-sm {
+    font-size: .875em; 
+  }
+  &.icon-1x {
+    font-size: 1em; 
+  }
+  &.icon-2x {
+    font-size: 2em; 
+  }
+  &.icon-3x {
+    font-size: 3em; 
+  }
+  &.icon-4x {
+    font-size: 4em; 
+  }
+  &.icon-5x {
+    font-size: 5em; 
+  }
+  &.icon-6x {
+    font-size: 6em; 
+  }
+  &.icon-7x {
+    font-size: 7em; 
+  }
+  &.icon-8x {
+    font-size: 8em; 
+  }
+  &.icon-9x {
+    font-size: 9em; 
+  } 
+  &.icon-10x {
+    font-size: 10em;
+  }
+  &.icon-fw {
+    text-align: center;
+    width: 1.25em; 
+  }
+  &.icon-ul {
+    list-style-type: none;
+    margin-left: 2.5em;
+    padding-left: 0; 
+    .icon-ul > li {
+      position: relative; 
+    }
+  }
+  &.icon-li {
+    left: -2em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit; 
+  }
+  &.icon-border {
+    border: solid 0.08em $gray-200;
+    border-radius: .1em;
+    padding: .2em .25em .15em; 
+  }
+}
