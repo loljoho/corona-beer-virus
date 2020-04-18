@@ -10,42 +10,10 @@ import {
 
 import {
   Placard,
-  PlacardIcon,
-  PlacardText,
 } from '../../components/Placard';
 
 import DataTable from '../../components/DataTable';
 import Subheader from '../../components/Subheader';
-
-// import { iconBiohazard } from '../../components/Icon/';
-// import { iconThumbsUp } from '../../components/Icon/';
-// import { iconClock } from '../../components/Icon/';
-// import { iconHospital } from '../../components/Icon/';
-// import { iconHospitalAlt } from '../../components/Icon/';
-// import { iconProcedures } from '../../components/Icon/';
-// import { iconBed } from '../../components/Icon/';
-// import { iconLungsVirus } from '../../components/Icon/';
-// import { iconLungs } from '../../components/Icon/';
-// import { iconClipboardCheck } from '../../components/Icon/';
-// import { iconTombstone } from '../../components/Icon/';
-// import { iconHospitalUser } from '../../components/Icon/';
-// import { iconSigma } from '../../components/Icon/';
-// import { iconFilesMedical } from '../../components/Icon/';
-
-import { Component as iconBiohazard } from '../../common/images/svg/biohazard.svg';
-import { Component as iconThumbsUp } from '../../common/images/svg/thumbs-up.svg';
-import { Component as iconClock } from '../../common/images/svg/clock.svg';
-import { Component as iconHospital } from '../../common/images/svg/hospital.svg';
-import { Component as iconHospitalAlt } from '../../common/images/svg/hospital-alt.svg';
-import { Component as iconProcedures } from '../../common/images/svg/procedures.svg';
-import { Component as iconBed } from '../../common/images/svg/bed.svg';
-import { Component as iconLungsVirus } from '../../common/images/svg/lungs-virus.svg';
-import { Component as iconLungs } from '../../common/images/svg/lungs.svg';
-import { Component as iconClipboardCheck } from '../../common/images/svg/clipboard-check.svg';
-import { Component as iconTombstone } from '../../common/images/svg/tombstone.svg';
-import { Component as iconHospitalUser } from '../../common/images/svg/hospital-user.svg';
-import { Component as iconSigma } from '../../common/images/svg/sigma.svg';
-import { Component as iconFilesMedical } from '../../common/images/svg/files-medical.svg';
 
 class Dashboard extends Component {
   constructor(props) {
@@ -112,20 +80,20 @@ class Dashboard extends Component {
       <> 
         <Subheader heading="Current" subheading="United States" />
         <Row className="d-sm-flex align-items-stretch justify-content-between mb-4">
-          <Placard icon="iconBiohazard" label="Positive Tests" value="333747"></Placard>
-          <Placard icon="iconThumbsUp" label="Negative Tests" value="1444740"></Placard>
-          <Placard icon="iconClock" label="Pending Tests" value="17368"></Placard>
-          <Placard icon="iconHospital" label="Hospitalized, Currently" value="23069"></Placard>
-          <Placard icon="iconHospitalAlt" label="Hospitalized, Cumulative" value="41559"></Placard>
-          <Placard icon="iconProcedures" label="In ICU, Currently" value="5497"></Placard>
-          <Placard icon="iconBed" label="In ICU, Cumulative" value="922"></Placard>
-          <Placard icon="iconLungs-virus" label="On Ventilator, Currently" value="612"></Placard>
-          <Placard icon="iconLungs" label="On Ventilator, Cumulative" value="193"></Placard>
-          <Placard icon="iconClipboardCheck" label="Recovered" value="14569"></Placard>
-          <Placard icon="iconTombstone" label="Deaths" value="9558"></Placard>
-          <Placard icon="iconHospitalUser" label="Hospitalized" value="41559"></Placard>
-          <Placard icon="iconSigma" label="Total" value="1795855"></Placard>
-          <Placard icon="iconFilesMedical" label="Total Tests" value="1778487"></Placard>
+          <Placard icon="biohazard" label="Positive Tests" value="333747"></Placard>
+          <Placard icon="thumbsUp" label="Negative Tests" value="1444740"></Placard>
+          <Placard icon="clock" label="Pending Tests" value="17368"></Placard>
+          <Placard icon="hospital" label="Hospitalized, Currently" value="23069"></Placard>
+          <Placard icon="hospitalAlt" label="Hospitalized, Cumulative" value="41559"></Placard>
+          <Placard icon="procedures" label="In ICU, Currently" value="5497"></Placard>
+          <Placard icon="bed" label="In ICU, Cumulative" value="922"></Placard>
+          <Placard icon="lungsVirus" label="On Ventilator, Currently" value="612"></Placard>
+          <Placard icon="lungs" label="On Ventilator, Cumulative" value="193"></Placard>
+          <Placard icon="clipboardCheck" label="Recovered" value="14569"></Placard>
+          <Placard icon="tombstone" label="Deaths" value="9558"></Placard>
+          <Placard icon="hospitalUser" label="Hospitalized" value="41559"></Placard>
+          <Placard icon="sigma" label="Total" value="1795855"></Placard>
+          <Placard icon="filesMedical" label="Total Tests" value="1778487"></Placard>
         </Row>
         <DataTable />
         {/* {data.map((card) => <Placard label={card.title} value={card.value} icon={card.icon} />)} */}

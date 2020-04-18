@@ -1,0 +1,10 @@
+$placard-icon-size: 64px;
+
+.placard {
+  .card-body {
+    .icon {
+      height: $placard-icon-size;
+      width: auto;
+    }
+  }
+}
