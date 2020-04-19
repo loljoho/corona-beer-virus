@@ -151,9 +151,26 @@ const ICONS_SVG = {
   }, 
 };
 
-const getIconByName = (iconName) => {
-  return ICONS_SVG[iconName] || ICONS_SVG[0];
-};
+// const DATA_ICON_NAMES = {
+//   'positive': 'biohazard',
+//   'negative': 'thumbsUp',
+//   'pending': 'clock',
+//   'hospitalizedCurrently': 'hospital',
+//   'hospitalizedCumulative': 'hospitalAlt',
+//   'inIcuCurrently': 'procedures',
+//   'inIcuCumulative': 'bed',
+//   'onVentilatorCurrently': 'lungsVirus',
+//   'onVentilatorCumulative': 'lungs',
+//   'recovered': 'clipboardCheck',
+//   'death': 'tombstone',
+//   'hospitalized': 'hospitalUser',
+//   'total': 'sigma',
+//   'totalTestResults': 'filesMedical',
+// };
+
+// const getIconByData = (dataName) => {
+//   return DATA_ICON_NAMES[dataName] || 'noIcon';
+// };
 
 const getPathByName = (iconName) => {
   return ICONS_SVG[iconName].path || ICONS_SVG[0].path;
@@ -164,7 +181,7 @@ const getViewBoxByName = (iconName) => {
 };
 
 export {
-  getIconByName,
+  // getIconByData,
   getPathByName,
   getViewBoxByName,
 };

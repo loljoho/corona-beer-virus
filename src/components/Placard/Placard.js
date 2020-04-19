@@ -15,8 +15,8 @@ const Placard = (props) => {
     label,
     value,
     icon,
-    // viewBox,
-    // drawPath,
+    viewBox,
+    path,
   } = props;
   return (
     <div className="placard col-xl-3 col-lg-4 col-sm-6 col-xs-12 mb-4">
@@ -24,7 +24,7 @@ const Placard = (props) => {
         <Card.Body>
           <Row noGutters align-items-center="true">
             <Col>
-              <PlacardIcon name={icon} /> 
+              <PlacardIcon name={icon} viewBox={viewBox} path={path} /> 
               {/* viewBox={viewBox} drawPath={drawPath} /> */}
             </Col>
             <Col className="mr-2">

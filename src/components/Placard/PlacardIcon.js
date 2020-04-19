@@ -11,8 +11,8 @@ const PlacardIcon = (props) => {
   const { name } = props;
   return (
     <Col>
-      <svg className="icon" viewBox={getViewBoxByName(name)}>
-        <path d={getPathByName(name)} />
+      <svg className="icon" viewBox={props.viewBox || getViewBoxByName(name)}>
+        <path d={props.path || getPathByName(name)} />
       </svg>
     </Col>
   );
