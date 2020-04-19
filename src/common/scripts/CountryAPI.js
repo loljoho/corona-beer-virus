@@ -1,4 +1,4 @@
-export function getCurrent() {
+export function getUSCurrent() {
   return fetch(`https://covidtracking.com/api/v1/us/current.json`)
     .then(response => {
       if (response.ok) {
@@ -6,5 +6,9 @@ export function getCurrent() {
       } else {
         throw new Error('Something went wrong ...');
       }
+    })
+    .then(data => {
+      console.info(data);
+      return data;
     });
 }
